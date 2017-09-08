@@ -2,7 +2,6 @@ baseURL = "https://mrcrilly.github.io/"
 languageCode = "en-us"
 title = "A Financial Education"
 theme = "ananke"
-publishDir = "docs"
 
 [params]
   description = "Learning how-to Fi/RE"
