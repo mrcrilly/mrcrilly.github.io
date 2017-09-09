@@ -5,5 +5,13 @@ theme = "minimo"
 
 [params]
   description = "Learning how-to Fi/RE"
-  background_color_class = "bg-black"
-  featured_image = "/images/wall-st.jpg"
+  copyrightOwner = "Michael Crilly"
+  copyrightStartYear = "2017"
+  hideSocialMenu = true
+  showReadTime = true
+
+[[menu.main]]
+  name = "home"
+  weight = -70
+  identifier = "home"
+  url = "http://mrcrilly.blog/"
