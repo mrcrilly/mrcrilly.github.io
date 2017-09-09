@@ -1,7 +1,7 @@
 baseURL = "http://mrcrilly.blog/"
 languageCode = "en-us"
 title = "Mr Crilly's Words"
-theme = "ananke"
+theme = "minimo"
 
 [params]
   description = "Learning how-to Fi/RE"
