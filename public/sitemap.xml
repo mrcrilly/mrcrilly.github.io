@@ -3,34 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://supervisor-daisy-73661.netlify.com/posts/study-path/</loc>
+    <loc>http://mrcrilly.blog/posts/study-path/</loc>
     <lastmod>2017-09-08T23:08:44+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://supervisor-daisy-73661.netlify.com/posts/a-bit-of-history/</loc>
+    <loc>http://mrcrilly.blog/posts/a-bit-of-history/</loc>
     <lastmod>2017-09-08T18:27:08+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://supervisor-daisy-73661.netlify.com/</loc>
+    <loc>http://mrcrilly.blog/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mrcrilly.blog/</loc>
     <lastmod>2017-09-08T23:08:44+10:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://supervisor-daisy-73661.netlify.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://supervisor-daisy-73661.netlify.com/posts/</loc>
+    <loc>http://mrcrilly.blog/posts/</loc>
     <lastmod>2017-09-08T23:08:44+10:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://supervisor-daisy-73661.netlify.com/tags/</loc>
+    <loc>http://mrcrilly.blog/tags/</loc>
     <priority>0</priority>
   </url>
   
