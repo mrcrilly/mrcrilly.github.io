@@ -1,6 +1,6 @@
-baseURL = "https://supervisor-daisy-73661.netlify.com"
+baseURL = "http://mrcrilly.blog/"
 languageCode = "en-us"
-title = "A Financial Education"
+title = "Mr Crilly's Words"
 theme = "ananke"
 
 [params]
