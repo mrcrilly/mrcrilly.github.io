@@ -1,7 +1,6 @@
 ---
 title: "Where To Begin"
 date: 2017-09-14T16:56:00+00:00
-draft: true
 ---
 
 I've seen a few posts in various financial sub-reddits as of late asking where to start learning about investing. It's a good question, and one I was asking my self twelve months ago, so I thought instead of just answering the question directly on Reddit, why not put together a blog post that can can be updated as time passes us by - a sort of knowledge base, if you will.
