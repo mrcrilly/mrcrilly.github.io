@@ -1,6 +1,6 @@
 ---
 title: "Study Path"
-date: 2017-09-08T23:08:44+10:00
+date: 2017-09-06T23:08:44+10:00
 draft: false
 ---
 
