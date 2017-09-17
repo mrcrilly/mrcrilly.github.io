@@ -1,4 +1,4 @@
-baseURL = "http://mrcrilly.blog/"
+baseURL = "https://mrcrilly.blog/"
 languageCode = "en-us"
 title = "Mr Crilly's Words"
 theme = "minimo"
@@ -12,6 +12,10 @@ theme = "minimo"
 
 [[menu.main]]
   name = "home"
-  weight = -70
   identifier = "home"
-  url = "http://mrcrilly.blog/"
+  url = "https://mrcrilly.blog/"
+
+[[menu.main]]
+  name = "learn"
+  identifier = "learn"
+  url = "https://mrcrilly.blog/posts/where-to-begin/"
