@@ -25,7 +25,13 @@ The alternative to this is you take the dividends your self, having them hit you
 
 It's also possible that in the event of a downfall, **you'll potentially pay a higher price for the shares** depending on when the DRIP triggers. That is to say if the share price is $10 when the DRIP triggers, there may be a downfall only moments later and the share price may drop to $8. This means you're paying $2 (or 20%) than the next investor.
 
-One final note on the disadvantages: **the tax bill**. When you're due to pay tax on your dividends, you'll either have to use savings to pay the bill or not invest for a short peroid of time. This is because you have no dividends in your bank account to carve up and distribute between the process of buying more shares and paying the tax man. For most I don't believe this is an issue and can be overcome by simply not investing for a month or two and using that money to pay the tax man instead.
+One **big misconception** is that you don't pay tax on the dividends that are invested. **This is not true.** Any dividends that are issued and reinvested through a DRIP are classified as taxable income and have to be declared on your tax return to the ATO.
+
+This is what the ATO as to say on the matter (this is accurate at the time of this article's publication date):
+
+> "For capital gains tax (CGT) purposes, if you participate in a dividend reinvestment plan you are treated as if you had received a cash dividend and then used the cash to buy additional shares." [ATO](https://www.ato.gov.au/General/Capital-gains-tax/Shares,-units-and-similar-investments/Dividend-reinvestment-plans/)
+
+And one final note on the disadvantages, continuing the topic of taxes: **you'll have a tax bill to pay, but no dividends to use to pay it**. When you're due to pay tax on your dividends, you'll either have to use savings to pay the bill or not invest for a short peroid of time. This is because you have no dividends in your bank account to carve up and distribute between the process of buying more shares and paying the tax man. For most I don't believe this is an issue and can be overcome by simply not investing for a month or two and using that money to pay the tax man instead.
 
 Another option is using short time, high interest savings to pay the tax bill and then topping that account back up out of your (non-invested) wages. This requires discipline too. It also requires either doing a quick tax calculation to understand how much of the dividend you need to keep back, to being conservative and keeping back 50% and investing the rest. This could be harmful to the growth of your portfolio if you just have money sat around at 3% instead of growing at 8%.
 
