@@ -2,6 +2,7 @@ baseURL = "https://mrcrilly.blog/"
 languageCode = "en-us"
 title = "Mr Crilly's Words"
 theme = "minimo"
+googleAnalytics = "UA-36711302-1"
 
 [params]
   description = "Learning how-to Fi/RE"
