@@ -11,6 +11,13 @@ A lot of resources, at least to begin with, will be centered around [Investopedi
 
 One final note: this is all about educating my self just as much as it is helping others educate themselves, so feel free to throw feedback my way (see the contact page) and I'll see about making sure it makes the guide.
 
+## Communities
+I'm starting this list of with communities you can frequent and join. I've done this because if you find you're not getting what you need from this article, then you can visit one of these options and get more information.
+
+- [Bogleheads](https://www.bogleheads.org/wiki/Getting_started)
+- [Financial Independence Australia (Reddit)](https://www.reddit.com/r/fiaustralia/)
+- [General Finance Australia (Reddit)](https://www.reddit.com/r/AusFinance/)
+
 ## Ecomonics
 Economics is generally split into two categories: micro and macro. Below are osme excellent resources to help you understand the difference and how they work as systems.
 
