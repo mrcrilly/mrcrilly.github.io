@@ -5,7 +5,7 @@ theme = "minimo"
 googleAnalytics = "UA-36711302-1"
 
 [params]
-  description = "Learning how-to Fi/RE"
+  description = "Learning how-to FI/RE"
   copyrightOwner = "Michael Crilly"
   copyrightStartYear = "2017"
   hideSocialMenu = true
