@@ -1,7 +1,6 @@
 ---
 title: "My Portfolios"
 date: 2017-10-08T17:32:57+10:00
-draft: true
 ---
 
 I currently have two forms of investment: my Superannuation and a private portfolio. I stack a lot of cash into both of them, totalling about $75,000 per year: $25,000 into the Superannuation (the maximum as of July 2017), and $50,000 into the private fund.
