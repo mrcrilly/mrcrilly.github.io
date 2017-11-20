@@ -1,22 +1,35 @@
 baseURL = "https://mrcrilly.blog/"
 languageCode = "en-us"
 title = "Mr Crilly's Words"
-theme = "minimo"
+theme = "cocoa-eh"
 googleAnalytics = "UA-36711302-1"
 
 [params]
-  description = "Learning how-to FI/RE"
-  copyrightOwner = "Michael Crilly"
-  copyrightStartYear = "2017"
-  hideSocialMenu = true
-  showReadTime = true
+dateform = "Jan 2, 2006"
+dateformfull = "Mon Jan 2 2006 15:04:05 MST"
+description = "Mr Crilly's Words"
+copyright = "Copyright © 2017 Michael Crilly"
+highlightjs = true
+progressively = true
+share = false 
+latestpostcount = 5
+github = "mrcrilly"
+email = "mc@sent.com"
+social_banner = "img/banner.png"
+usesmallsummarycard = true
+posts_navigation = true
+small_banner_logo = false
 
-[[menu.main]]
-  name = "home"
-  identifier = "home"
-  url = "https://mrcrilly.blog/"
+[params.colors]
+identifier = "#527fc1f"
+identifier_dark = "#1a3152"
+trivial = "#6a7a8b"
+foreground = "#181d2a"
+background = "#f9f9f9"
+background_dark = "#282a36"
+code = "#87a5d2"
+type = "#97d28b"
+special = "#ffcb8d"
+value = "#96c2d7"
+statement = "#ff8e91"
 
-[[menu.main]]
-  name = "learn"
-  identifier = "learn"
-  url = "https://mrcrilly.blog/posts/where-to-begin/"
