@@ -1,6 +1,6 @@
 ---
 title: "Vim"
-tate: 2017-12-21T18:16:09+01:00
+date: 2017-12-21T18:16:09+01:00
 ---
 
 **tl;dr** I enjoy using Vim and crafting it into a lean tool for programming
