@@ -1,11 +1,10 @@
 ---
 title: "Vim"
-date: 2017-12-06T18:40:24+10:00
-draft: true
+tate: 2017-12-21T18:16:09+01:00
 ---
 
 **tl;dr** I enjoy using Vim and crafting it into a lean tool for programming
-with in multiple languages. I have my Vimrc file [over here on
+with. I have my Vimrc file [over here on
 GitHub](https://github.com/mrcrilly/vim) and if you decide to clone the repo to
 `~/.vim`, a simple `vim +PlugInstall` should see you right (except for Ack and
 Gutentags - they need some additional work.)
@@ -16,39 +15,45 @@ There are a lot of Vim tutorials out there. Vim has been around for quite some
 time, so it's only natural for the Internet to be flooded with how-tos, guides,
 introductions, and many other articles along the same lines. There are even
 books. I don't want to introduce Vim or even write a tutorial, I simply want to
-talk about it and how I use it.
+talk about it and how I use it. 
 
-I'm pretty much talking to my self here.
+I'm pretty much just talking to my self here.
 
 I was actually opposed to using Vim for quite some time. Then I started using
-it; I gave it a chance. I used it daily for roughly six months and then one day I
-opened up a project in Microsoft's Visual Studio Code. I was pleasantly
-surprised at how much functionality came out of the box, not to mention the
-automatic plugin detection and easy installation. I moved over straight away
-and Vim was left to gather dust.
+it; I gave it a chance. Prior I was using Sublime Text. I used it daily for
+roughly six months and then one day I opened up a project in [Microsoft's
+Visual Studio Code](https://code.visualstudio.com). I was pleasantly surprised
+at how much functionality came out of the box, it was visually appealing, and
+not to mention the automatic plugin detection and easy installation. I moved
+over straight away and Vim was left to gather dust.
 
-I'm sure my little story has a predictable outcome: I started using Vim again
-recently, and I'm not going back to another editor. I also recently changed
-career, moving into a new role as a full time programmer. Previosuly I was a
-Site Reliability Engineer (not at Google, unlike everyone on Hacker News, it
-seems) so programming came in bits and bits, so my editor of choice wasn't a
-big deal.
+The outcome of my shift to VSCode is probably predictable, so I'll just get to
+the point: this move to VSCode didn't last very long.
 
-It turns out that crafting a Vim experience is addictive. Adding plugins and
-shortcuts is a lot of fun and the possibilities are endless. At this point in
-my Vim "career", I find my self spending 10-15 minutes per day adding some
-plugin or refining the configuration of another. Over time, I think this will
-deminish and I'll end up with a very well refined, powerful Vim installation.
+I recently changed career, moving into a new role as a full time programmer.
+Programming came in bits and bits before the switch to a full time role, so my
+editor of choice wasn't a big deal.  However after starting in the new role, I
+was prompted to give Vim a try with `vim-go` in place. I loved the experience
+and once again fell in love with Vim.
+
+It also turns out that crafting a Vim experience is addictive, so I'm now
+hooked on making Vim the perfect tool. Things like adding plugins and shortcuts
+is a lot of fun and the possibilities are endless. At this point in my Vim
+"career", I find my self spending 10-15 minutes per day adding some plugin or
+refining the configuration of another. Over time, I think this will deminish
+and I'll end up with a very well refined, powerful Vim installation.
 
 I'm beginning to understand why people call this trade a "craft" - you
 literally do build a chest of tools which you keep sharp, clean, and well
-oiled. All that without even going into the actual topic of programming.
+oiled. All that without even going into the actual craft of programming.
+
+Let's actually start looking at my setup...
 
 ---
 
 ## The Leader Key
 I've set my leader key to `,`. It can be anything you like, but given the way I
-position my hands on the keyboard, I've chossen this key. With the key set, I
+position my hands on the keyboard, I've chosen this key. With the key set, I
 follow some simple guidelines for defining shortcuts.
 
 When I add a new plugin, like the `vim-go` plugin which introduces a lot of Go
@@ -58,20 +63,23 @@ plugin. In this case I picked `g` for `vim-go`. Then I select a second letter
 for the given shortcut. As a result, I have `,gb` set to run `:GoBuild` and
 `,gt` set to run `:GoTest`.
 
+I use buffers like "tabs", so I use the `,t` leader key combination to control
+"tabs". In my case, `,tn` creates a new "tab" (buffer), while `,tr` move to the
+previous buffer and `,ty` moves to the next.
+
 This is how I use my leader key.
 
 ## Plugins
-So without dribbling on for too long, let's look at the plugins I'm currently
-using:
+So what plugins am I currently using, and how do I have them configured?
 
-- [junegunn/fzf]()
-- [junegunn/fzf.vim]()
-- [fatih/vim-go]()
-- [vim-airline/vim]()
-- [scrooloose/nerdcommenter]()
-- [Plug ]()
-- [mileszs/ack.vim]()
-- [ludovicchabant/vim-gutentags]()
+- [junegunn/fzf](https://github.com/junegunn/fzf)
+- [junegunn/fzf.vim](https://github.com/junegunn/fzf.vim)
+- [fatih/vim-go](https://github.com/fatih/vim-go)
+- [vim-airline/vim](https://github.com/vim-airline/vim-airline)
+- [scrooloose/nerdcommenter](https://github.com/scrooloose/nerdcommenter)
+- [elixir-plug/plug](https://github.com/elixir-plug/plug)
+- [mileszs/ack.vim](https://github.com/mileszs/ack.vim)
+- [ludovicchabant/vim-gutentags](https://github.com/ludovicchabant/vim-gutentags)
 
 I've listed the plugins above in their GitHub "path" style. If, like me, you're
 using `Plug` for your plugin management, you can copy & paste the below into
@@ -93,23 +101,24 @@ binary on your system. This works fine on macOS and Linux, but I don't know how
 it behaves on Windows, if that's even a valid option.
 
 ### Fuzzy Finding Files
-[fzf]() and `fzf.vim` are used for fuzzy finding files from within your running
-Vim instance. It makes opening files into a new buffer super simple. It also
-includes options for searhcing through open buffers, making it easier to switch
-between a large range of open buffers.
+[fzf](https://github.com/junegunn/fzf-bin/releases) and `fzf.vim` are used for
+fuzzy finding files from within your running Vim instance. It makes opening
+files into a new buffer super simple. It also includes options for searching 
+through open buffers, making it easier to switch between a large range of open
+buffers.
 
-I replaced [CtrlP]() with fzf.
+I replaced [CtrlP](https://github.com/kien/ctrlp.vim) with fzf.
 
 Note: the `fzf` binary can also be used outside of Vim, including replacing the
 normal Bash history reverse-search (`ctrl+r`) for searching your command
 history. It's rather nice.
 
 ### Go Development
-With `vim-go`, you get almost everything you need out of the box for [Go]()
-development.  It'll even install all the binaries required for linting,
-testing, and can handle going directly to definitions, building your code,
-installing a `main` package to your `$GOBIN`, and so on. It doesn't leave much
-to be desired.
+With `vim-go`, you get almost everything you need out of the box for
+[Go](https://golang.org) development.  It'll even install all the binaries
+required for linting, testing, and can handle going directly to definitions,
+building your code, installing a `main` package to your `$GOBIN`, and so on. It
+doesn't leave much to be desired.
 
 ### Status Bar
 Using `vim-airline`, I get a pretty status bar that gives me some useful
@@ -135,9 +144,15 @@ out.
 
 ### Ack
 Now we've getting to the serious stuff. The `ack` plugin allows me to use [The
-Silver Searcher]() for finding patterns inside of files. This means I can look
-for a piece of code I might need to get a particular job done or perhaps find a
-class I need to inherit from.
+Silver Searcher](https://github.com/ggreer/the_silver_searcher) for finding
+patterns inside of files. This means I can look for a piece of code I might
+need to get a particular job done or perhaps find a class I need to inherit
+from.
+
+On very large code bases, this can help a little bit but it can also be quite
+clunky and difficult to use. I do currently work with a very large code base,
+but moving towards microservices and more modular application design patterns
+means it's a lean tool, albeit one that might be removed in the future.
 
 The plugin along requires some additional work to get going, but as this isn't
 a tutorial I won't go into details.
@@ -250,6 +265,10 @@ replace it with `goimports`:
 let g:go_fmt_command = "goimports"
 ```
 
+This means we can both correctly resolve imports but also handle all formatting
+edge cases, which I'm told `go fmt` can't do. I need to check up on this more
+so I fully understand why it's better.
+
 ### Invisible Characters
 I usually keep these on. I've often found little issues in Python code and
 generally think they're very helpful for most tasks:
@@ -267,3 +286,7 @@ let g:gutentags_ctags_exclude = ['*.css', '*.html', '*.js', '*.c', '*.cpp', '*.j
 let g:gutentags_cache_dir = '~/.vim/gutentags'
 ```
 
+## Fin
+I'll aim to get this article up to date as time goes on. It'll act as
+documentation for my Vim career as well as an opportunity for others to suggest
+better ways of working or, perhaps, learning something new from my experiences.
