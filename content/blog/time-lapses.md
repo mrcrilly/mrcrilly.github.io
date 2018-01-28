@@ -1,29 +1,28 @@
 ---
 title: "Time Lapses"
-date: 2017-12-25T16:33:43+01:00
+date: 2018-01-25T16:33:43+01:00
 draft: true
 ---
 
-I love making time lapses. I love photography in general, but time lapses allow
+I love making time lapses. I love photography and filmography in general, but time lapses allow
 me to capture a little scene of activity, like a little burst of life, in a
-pleasing and fun format to watch. If I'm being honest, they also let me capture
-people, or at least their movement, without having to deal with people. 
+format that's pleasing and fun to watch. If I'm being honest, they also let me capture
+people, or at least their movement, without having to deal with the people themselves. 
+
+People are great - totes love 'em - but they can be akward and difficult to shoot just right. So instead of trying, I simply shoot time lapses so I capture their movements without the need for them to even be in focus. It's lazy I know, but the results are delicuous. 
 
 With time lapses, I'm very much mostly interested in movement around, near, or
-into some sort of interesting static object such as a building or tunnel.
-Because of that interest, I don't much care for the features or details of
-people, but I do like the nice blurry lines they create for me.
+into some sort of interesting static object such as a building or tunnel. Everything that moves around it helps project that object into the frame and makes it the dominate feature.
 
 ## Subject
-Usually interesting buildings, or just buildings of note, are great places to
-get a time lapse. More often than not they have large crowds of people walking
-in and around them, especially if it's a tourist trap.
+I usually look for interesting buildings, or buildings of note such as palaces, because I find they're great places to
+get a time lapse. This is especially true if they're a tourist destination/trap, because during the highs of the tourist session you get lots of faces and various colours moving around the subject.
 
-Museums and art galleries are a good subject too, but the exact reasons above.
-The same with anything that people attend often, such as cinemas or theatres.
-Places with a lot of people motion.
+Museums and art galleries are a good subject too, as they tend to be quite beautiful as buildings go. The same apples to anything that people attend often, such as cinemas or theatres. Places with a lot of "people motion".
 
-Roads are also great, especially at night.
+Roads, highways, etc, are a classic scene to shoot, especially at night.
+
+One of my favourite time lapse subjects, however, is the busker or street performer. One performer in particular is the human statue. These guys and girls stay perfectly still, with only a bit of wobbling, usually for hours at a time. Time lapses of the tourists and locals snapping shots of them can be amazing, especially if you work with the performer to get an amazing angle.
 
 ## Equipment
 I don't have anything too fancy at this point in time. However I'm often very
