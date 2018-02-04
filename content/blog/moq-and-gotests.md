@@ -1,4 +1,3 @@
-
 ---
 title: "Go Testing: Moq and gotests"
 date: 2018-02-04T00:40:17+01:00
