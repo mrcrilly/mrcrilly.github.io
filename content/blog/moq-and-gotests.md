@@ -6,6 +6,16 @@ draft: true
 
 I recently getting more involved with writing tests at work. One thing I noticed with our code was a lot of function pointers in structs. When I queried what this was for I was told, "For mocking out the functions for easier testing." That's certainly one way to do it, but there's deffinitely a better way.
 
+## tl;dr
+Using Moq and gotests, I've been able to rapidly develop mock frameworks for my interfaces and also generate table driven tests for my implementations. Now I can easily test complete implementations of my interfaces but also mock out any dependencies needed with little to no work at all.
+
+On the CLI I would:
+
+1. `moq -out interface_mock.go . interface`
+1. `gotests -all -w type_test.go . type.go`
+
+Replacing `interface` and `type` accordingly.
+
 ## Interfaces
 Interfaces are one of Go's most underutilised features. They can be somewhat confusing and hard to get your head around, but when they're put in place they allow the above situation to be handled in a much more elegant manner. 
 
@@ -60,4 +70,7 @@ func (p *profile) SetSignedUp(date time.Time) bool { p.SignedUpDate = date; retu
 
 Nothing magical here. Just returning some static information. Obviously a real implementation would use a database or some other data store. We're just going to work with static information.
 
+## Moq
+Let's now look at what Moq can do for us using the Moq CLI tool directly, but also using the `//go:generate` directive we saw above.
 
+If we invoke Moq directly, like so: `moq -out user_mocks.go . userProfile` we will get a big file called `user_mocks.go` containing, as you might have asked, a mocking "framework" for our `userProfile` interface.
