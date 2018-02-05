@@ -22,55 +22,148 @@ Interfaces are one of Go's most underutilised features. They can be somewhat con
 For those who are new to Go, let's define a quick interface so we have an example to work with throughout this article.
 
 ```
-//go:generate moq -out user_mocks.go . userProfile
-type userProfile interface {
-	Name() string
-	SetName(name string) bool
 
-	Email() string
-	SetEmail(email string) bool
+//go:generate moq -out user_mock.go . Profile
+//go:generate gotests -all -w profile.go
 
-	Password() string
-	SetPassword(password string) bool
+// Profile abstracts how a profile behavours.
+// Primarily added for mock-ability.
+type Profile interface {
+	RealName() string
+	SetRealName(name string) error
 
-	SignedUp() time.Time
-	SetSignedUp(date time.Time) bool
+	Age() uint
+	SetAge(age uint) error
+
+	DOB() *time.Time
+	SetDOB(dob time.Time) error
+
+	Location() (string, string)
+	SetLocation(city, country string) error
+
+	LinkedLogins() []login.Login
+	AddLinkedLogin(login login.Login) error
+	RemoveLinkedLogin(id string) error
+	DisableLinkedLogin(id string) error
+
+	Friendships() []friend.Friend
+	AddFriendship(friend friend.Friend) error
+	RemoveFriendship(friend friend.Friend) error
 }
 ```
 
-We'll get into the `//go:generate` line later.
+We'll get into the `//go:generate` lines later.
 
-This is a simple interface for a "user profile" type. We're saying any types that wish to implement the interface must conform to having these receivers. Pretty simple stuff, really. 
-
-Nothing more to be said?
+This is a "simple" interface for a user profile type. This is a contract for other packages in my application to utilise and have guarantees about behaviour. I like this structure of placing concrete types in their own packages. maybe that's something to be explored in another post.
 
 ## An Implementation
 Let's write a simple implementation for the interface above.
 
 ```
-type profile struct {
-	RealName       string
-	EmailAddress   string
-	HashedPassword string
-	SignedUpDate   time.Time
+// UserProfile represents a human readable profile for a user.
+// This profile is static, but can have multiple logins bound to it.
+type UserProfile struct {
+	Realname    string
+	UserAge     uint
+	DateOfBirth time.Time
+	City        string
+	Country     string
+	Logins      []login.Login
+	Friends     []friend.Friend
 }
 
-func (p *profile) Name() string             { return "Michael Crilly" }
-func (p *profile) SetName(name string) bool { p.RealName = name; return true }
+// RealName well return the Realname field for a user.
+func (p *UserProfile) RealName() string { return "" }
 
-func (p *profile) Email() string              { return "my@email.com" }
-func (p *profile) SetEmail(email string) bool { p.EmailAddress = email; return true }
+// SetRealName well update the Realname field for a user.
+func (p *UserProfile) SetRealName(name string) error { return nil }
 
-func (p *profile) Password() string                 { return "badhashedpassword" }
-func (p *profile) SetPassword(password string) bool { p.HashedPassword = password; return true }
+// Age well return the UserAge field for a user.
+func (p *UserProfile) Age() uint { return 0 }
 
-func (p *profile) SignedUp() time.Time             { return p.SignedUpDate }
-func (p *profile) SetSignedUp(date time.Time) bool { p.SignedUpDate = date; return true }
+// SetAge well update the UserAge field for a user.
+func (p *UserProfile) SetAge(age uint) error { return nil }
+
+// DOB well return the DOB field for a user.
+func (p *UserProfile) DOB() *time.Time { return &time.Time{} }
+
+// SetDOB well update the DOB field for a user.
+func (p *UserProfile) SetDOB(dob time.Time) error { return nil }
+
+// Location well return the City, Country fields for a user.
+func (p *UserProfile) Location() (string, string) { return "", "" }
+
+// SetLocation well update the City, Country fields for a user.
+func (p *UserProfile) SetLocation(city, country string) error { return nil }
+
+// LinkedLogins well return the Logins field for a user.
+func (p *UserProfile) LinkedLogins() []login.Login { return []login.Login{} }
+
+// AddLinkedLogin well add a Login to the Logins field for a user.
+func (p *UserProfile) AddLinkedLogin(login login.Login) error { return nil }
+
+// RemoveLinkedLogin well remove a Login from the Logins field for a user.
+func (p *UserProfile) RemoveLinkedLogin(id string) error { return nil }
+
+// DisableLinkedLogin well disable a Login in the Logins field for a user.
+func (p *UserProfile) DisableLinkedLogin(id string) error { return nil }
+
+// Friendships well return the Friends field for a user.
+func (p *UserProfile) Friendships() []friend.Friend { return []friend.Friend{} }
+
+// AddFriendship well add a Friend to the Friends field for a user.
+func (p *UserProfile) AddFriendship(friend friend.Friend) error { return nil }
+
+// RemoveFriendship well remove a Friend from the Friends field for a user.
+func (p *UserProfile) RemoveFriendship(friend friend.Friend) error { return nil }
 ```
 
-Nothing magical here. Just returning some static information. Obviously a real implementation would use a database or some other data store. We're just going to work with static information.
+Nothing magical here. Just returning some static information. Obviously a real implementation would use a database or some other data store. We're just going to work with static information so we can explore the concepts surrounding mocking and table driven tests.
 
 ## Moq
-Let's now look at what Moq can do for us using the Moq CLI tool directly, but also using the `//go:generate` directive we saw above.
+So we have an interface and an implementation of it (which obviously comes with function/sreceivers that need testing.) Let's now take a look at Moq.
 
-If we invoke Moq directly, like so: `moq -out user_mocks.go . userProfile` we will get a big file called `user_mocks.go` containing, as you might have asked, a mocking "framework" for our `userProfile` interface.
+If we invoke Moq directly, like so: `moq -out user_mock.go . Profile` we will get a big file called `user_mock.go` containing, as you might have asked, a mocking "framework" for our `Profile` interface. I call it a framework because it comes not only with an object we can use for mocking the interface and testing its methods, but also a simple means of tracking the call stack along with the parameters passed to each receiver.
+
+### ProfileMock
+The actual mocked interface looks like this:
+
+```
+type ProfileMock struct {
+	// AddFriendshipFunc mocks the AddFriendship method.
+	AddFriendshipFunc func(friend friend.Friend) error
+
+	// AddLinkedLoginFunc mocks the AddLinkedLogin method.
+	AddLinkedLoginFunc func(login login.Login) error
+
+	// AgeFunc mocks the Age method.
+	AgeFunc func() uint
+
+	// DOBFunc mocks the DOB method.
+	DOBFunc func() *time.Time
+	
+	// ...
+	
+	// calls tracks calls to the methods.
+	calls struct {
+		// AddFriendship holds details about calls to the AddFriendship method.
+		AddFriendship []struct {
+			// Friend is the friend argument value.
+			Friend friend.Friend
+		}
+		// AddLinkedLogin holds details about calls to the AddLinkedLogin method.
+		AddLinkedLogin []struct {
+			// Login is the login argument value.
+			Login login.Login
+		}
+		// Age holds details about calls to the Age method.
+		Age []struct {
+		
+		// ...
+	}
+}
+```
+
+I've contracted this down to a few fields for readability. The actual struct is massive.
+
+
