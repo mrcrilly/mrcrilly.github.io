@@ -166,4 +166,48 @@ type ProfileMock struct {
 
 I've contracted this down to a few fields for readability. The actual struct is massive.
 
+What we have here is quite a simple, but powerful structure offered to us by Moq. We can very easily take full advantage of this mocked out Profile type in our table driven tests. Let's look at them next.
 
+## gotests
+When we want to do unit testing we often begin from scratch, writing our tests and looking to cover as many use cases as we can. With table driven tests, which is what `gotests` generates for us, we get a very clear path to completing our tests and we can add new input for testing the unit.
+
+Here's what the tests look like:
+
+```
+func TestUserProfile_RealName(t *testing.T) {
+	type fields struct {
+		Realname    string
+		UserAge     uint
+		DateOfBirth time.Time
+		City        string
+		Country     string
+		Logins      []login.Login
+		Friends     []friend.Friend
+	}
+	tests := []struct {
+		name   string
+		fields fields
+		want   string
+	}{
+	// TODO: Add test cases.
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			p := &UserProfile{
+				Realname:    tt.fields.Realname,
+				UserAge:     tt.fields.UserAge,
+				DateOfBirth: tt.fields.DateOfBirth,
+				City:        tt.fields.City,
+				Country:     tt.fields.Country,
+				Logins:      tt.fields.Logins,
+				Friends:     tt.fields.Friends,
+			}
+			if got := p.RealName(); got != tt.want {
+				t.Errorf("UserProfile.RealName() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
+```
+
+If we replace the `TODO` line with testing entries, all we have to do is run the test and we can be sure the unit its for will be throughly tested (provided you're covering all possible cases.)
