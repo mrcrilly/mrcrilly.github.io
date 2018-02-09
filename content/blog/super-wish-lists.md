@@ -1,7 +1,7 @@
 ---
 title: "Introducing: The 'Super Wish Lists' Series"
-date: 2018-02-08T00:40:17+01:00
-draft: true
+date: 2018-02-09T12:10:00+00:00
+draft: false
 ---
 
 Blogging and vLogging has always been fun for me, but time and focus have never been in sync. Today that changes, and I'd like to introduce you to a new series, a new project, I'm firing up to get my creative juices flowing and more importantly, share my knowledge with you amazing people.
@@ -85,13 +85,14 @@ This is going to be great for everyone involved. I'm super excited to be sharing
 
 I get to improve my writing and vlogging skills. I love writing and vlogging, but I love sharing knowledge too. It's one of the skills we can all learn to do, and it costs nothing but time and a little bit of effort. I'm grateful for the opportunity to be able to share these skills with you, so a big thank you for reading and following along.
 
-We all get better at programming software, both server-side and mobile! Server side development has always been a passion of mine, but I've never touched mobile development beyond the, "Hello, world!" examples and tutorials. It's deffinitely time for that to change. This project is going to enlighten me a new world of software development, and I hope you'll join me.
+We all get better at programming software, both server-side and mobile! Server side development has always been a passion of mine, but I've never touched mobile development beyond the, "Hello, world!" examples and tutorials. It's deffinitely time for that to change. This project is going to enlighten me to a new world of software development, and I hope you'll join me because it's going to be a run and wild ride.
 
 We get to contribute back into the open-source market. This has been something I've been meaning to do for some time now and despite the fact there are literally tens of thousands of projects to contribute to, I've never been more excited for this project right here.
 
-Finally, and most importantly to me, you lovely people get to learn as well, from the code, the blog and the vlog. At least that's my dream. I do this daily, for a living, and being able to reach out and help others learn these skills, regardless of race, creed, religion, and geographical location, is just amazing to me.
+How does having an actual live, real app, that you helped write, on the iOS app store sound? That's sounds amazing to me. With OpsFactory hosting a real, production ready deployment of the API, the iOS (and eventually Android) app will be able to begin saving lives... OK maybe not saving lives, but certainly making them easier that's for sure.
 
-## How can you Help?
-The best way to help is to subscribe to the channel and follow along. That helps me out, but more importantly it helps **YOU** out. This is about you as much as it is me, so come along for the ride and let's learn something together.
+Finally, and most importantly to me, you lovely people get to learn as well, from the code, the blog and the vlog. At least that's my dream. I do this daily, for a living, and being able to reach out and help others learn these skills, regardless of race, creed, religion, and geographical location, is just amazing to me. Do let me know if I can or have helped you in anyway.
+
+So **subscribe to [the channel](https://www.youtube.com/opsfactory) and follow along**. That helps me out, but more importantly **it helps you** out too. This is about you as much as it is me, so come along for the ride and let's learn something together.
 
 See you soon!
