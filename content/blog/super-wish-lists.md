@@ -45,13 +45,52 @@ The application will be broken down into three components:
 1. A CLI utility written in Go
 1. And an iOS mobile app
 
-... and that's it. At least for now. That's version `v1.0.0`.
+... and that's it. At least for now. That's version `v1.0.0`. Future versions will see an Android version coming into fruition, but for now I'm focused on a three stage plan.
 
-- The construction of the application, all three components (four when I introduce Android into the fold) are not only in the open because they will be OSS...
-- I've broken the construction of each component into tasks, and each high level task not only represents a step towards the component coming to life, but a blog post and a vlog...
-- So I'll be publishing a blog post whenever I complete a task, but I'll write it as I go...
-- After the blog post is written and published, a vLog will follow on the OpsFactory YouTube channel...
-- These two additional steps to the development process will offer a great opportunity for others to learn from my work, mistakes, errors, bugs, security issues, and as new technologies are introduced...
-- It'll be a great learning experience...
-- Here is how you can help...
-- Watch this space for the next article in the Super Wish List series: architecture! ...
+Why a CLI utility? Writing a CLI tool will give us a big set of advantages:
+
+1. It'll be fast to write
+1. It can be written in Go
+1. It can be automated easily
+1. It can be used to populate a database quickly using a `Makefile` (automation)
+
+And I'm sure there are other reasons too. For me, that's quite sufficient in terms of why it's a good idea.
+
+As for an iOS only app. Why not Andriod as well? Aren't we going to develop a crossplatform mobile application? Nope. Having sorted out plenty of advice on the topic of mobile development, especially for a simple application like ours, I've been heavily advised to go native. That is, write the applications in native tongue: Swift for iOS and Kotlin (not Java) for Android.
+
+In light of this advice, I'll be going iOS only for `v1`. We will look at Android for `v1.1`, perhaps.
+
+## Where's the Web UI?
+There won't be one. This application is a perfect example for a mobile based application. It's the kind of app you don't login to via a web browser, but instead open on your phone, make a few changs or adjustments, maybe three times a year, and close again. It's a low use app' and it's perfect for the mobile platform.
+
+This isn't to say a web UI can't or won't exist in the future. It'll be an open-source project, right? Anyone can write the web UI, or any client they like, however they like, whenever they like.
+
+For now, I'm sticking a three pashe project consistening of API and mobile. I think you're going to love the ride.
+
+## The Process
+So how is all this going to come together to form a cohesive project with planned development cycles and educational content? Good question! I've broken the construction of each component into tasks, and each high level task not only represents a step towards the component coming to life, but a blog post on this very website, and a vlog on the OpsFactory channel.
+
+Here's what the process will look like:
+
+1. I will complete a high level task and push the code upstream
+1. A blog post will be written for your consumption
+1. Shortly after the post goes up, a vlog will be put together discussing the same information
+1. Rinse, repeat
+
+With this process, we should see a **two week development cycle/sprint** produce a single unit of work and posts to the blog and vlog. That's the aim. It may change if it becomes too difficult or give life takes over - only time will tell.
+
+## The Learning Experience
+This is going to be great for everyone involved. I'm super excited to be sharing this project with anyone and everyone who is interested in the process of software development and deployment. So what does the learning experience look like?
+
+I get to improve my writing and vlogging skills. I love writing and vlogging, but I love sharing knowledge too. It's one of the skills we can all learn to do, and it costs nothing but time and a little bit of effort. I'm grateful for the opportunity to be able to share these skills with you, so a big thank you for reading and following along.
+
+We all get better at programming software, both server-side and mobile! Server side development has always been a passion of mine, but I've never touched mobile development beyond the, "Hello, world!" examples and tutorials. It's deffinitely time for that to change. This project is going to enlighten me a new world of software development, and I hope you'll join me.
+
+We get to contribute back into the open-source market. This has been something I've been meaning to do for some time now and despite the fact there are literally tens of thousands of projects to contribute to, I've never been more excited for this project right here.
+
+Finally, and most importantly to me, you lovely people get to learn as well, from the code, the blog and the vlog. At least that's my dream. I do this daily, for a living, and being able to reach out and help others learn these skills, regardless of race, creed, religion, and geographical location, is just amazing to me.
+
+## How can you Help?
+The best way to help is to subscribe to the channel and follow along. That helps me out, but more importantly it helps **YOU** out. This is about you as much as it is me, so come along for the ride and let's learn something together.
+
+See you soon!
