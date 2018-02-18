@@ -168,13 +168,13 @@ Now let's do what you're supposed to do (if I may be so bold):
 
 ```go
 type CoreConfiguration interface {
-	doubler(uint, uint, uint) uint
-	tripler(uint, uint, uint) uint
+	doubler(uint) uint
+	tripler(uint) uint
 }
 
 type Configuration struct{ MaxValue, MinValue uint }
-func (c *Configuration) doubler(i, min, max uint) uint { return i * 2 }
-func (c *Configuration) tripler(i, min, max uint) uint { return i * 3 }
+func (c *Configuration) doubler(i uint) uint { return i * 2 }
+func (c *Configuration) tripler(i uint) uint { return i * 3 }
 ```
 
 So we have an interface and a concrete implementation of it. In my opinion, it's cleaner already. Let's keep going.
@@ -202,6 +202,35 @@ func main() {
 }
 ```
 
-That is indeed the entire `main()` function, complete with configuration. No need to check for overrides and then set defaults when they're not present: it's a `struct{}` that complies with the `interface{}`. The rest you know: `start()` uses the functions (receivers) on the `Configuration` passed in and the rest is history.
+That is indeed the entire `main()` function, complete with configuration. No need to check for overrides and then set defaults when they're not present: it's a `struct{}` that complies with the `interface{}`. The rest you know: `start()` uses the functions (receivers) on the `Configuration` passed in. Let's override with an example:
 
-This is just straight up easier to implement, understand, and is less cognitive overhead to work with.
+```go
+type MegaConfiguration struct { MinValue, MaxValue uint }
+func (m *MegaConfiguration) doubler(i uint) uint {return i * m.MinValue }
+func (m *MegaConfiguration) tripler(i uint) uint {return i * m.MaxValue }
+
+func main() {
+    	if len(os.Args) <= 2 {
+		fmt.Println("no args given: need min and max")
+		return
+	}
+
+	c = &MegaConfiguration{
+		MinValue: func() uint {
+			r, _ := strconv.Atoi(os.Args[1]) // 0 is current file
+			return uint(r)
+		}(),
+
+		MaxValue: func() uint {
+			r, _ := strconv.Atoi(os.Args[2])
+			return uint(r)
+		}(),
+	}
+
+	start(c)
+}
+```
+
+It's so easy to override the functionality in this particular case it's silly. I'm all for interfaces in probably all cases and do not see the reasons behind using options one and two. This is just straight up easier to implement, understand, and is less cognitive overhead to work with.
+
+What are your thoughts?
