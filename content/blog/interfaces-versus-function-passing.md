@@ -186,7 +186,6 @@ func main() {
 		return
 	}
 
-	var c CoreConfiguration
 	c = &Configuration{
 		MinValue: func() uint {
 			r, _ := strconv.Atoi(os.Args[1]) // 0 is current file
