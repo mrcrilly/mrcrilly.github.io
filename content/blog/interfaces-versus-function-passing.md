@@ -53,7 +53,9 @@ func main() {
 }
 ```
 
-Somewhat standard stuff. Here we're using `os.Args` to take in two parameters from the CLI. It's not the ideal means of handling flags, the `flags` package is (at minimum; consider [Viper](https://github.com/spf13/viper) too), but this is a quick and dirty example. We're also setting the `MinValue` and `MaxValue` fields to some `uint` passed in on the CLI. We're using an anonymous function here so we can use `strconv.Atoi()` without having to deal with the returned `error` value. Again, this is just an example.
+Somewhat standard stuff. Here we're using `os.Args` to take in two parameters from the CLI. It's not the ideal means of handling flags, the `flags` package is (at minimum; consider [Viper](https://github.com/spf13/viper) too), but this is a quick and dirty example. We're also setting the `MinValue` and `MaxValue` fields to some `uint` passed in on the CLI.
+
+As a quick aside, we're using Lambdas in the `Configuration` initialisation so we can use `strconv.Atoi()` without having to deal with the returned `error` value or work with an external, temporary variable. This use of Lambdas is not to say that ignoring errors is good practice, but it speeds things along nicely for us here. Again, this is just an example.
 
 So that's the configuration of our amazing application in place. Let's look at configuring those `function` types (inside `main()`):
 
