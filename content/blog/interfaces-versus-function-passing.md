@@ -1,6 +1,6 @@
 ---
 title: "Interfaces vs Straight Functions"
-date: 2018-02-14T07:00:00+01:00
+date: 2018-02-18T07:00:00+01:00
 ---
 
 How should I pass around (functional) dependencies? Via an `interface` or `func` type? I have an example to show why I will (mostly) always prefer interfaces.
