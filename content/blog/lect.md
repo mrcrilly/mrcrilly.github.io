@@ -4,9 +4,9 @@ date: 2018-04-16T07:00:00+01:00
 draft: true
 ---
 
-**tl;dr**
+I'm working on a game engine called LECT (pronounced `lex`). It stands for Lore Mastery, Exploration, Combat, and Time. It's not the most original of names but in a nutshell these are the key aspects of the engine and they're what are going to make games built on the engine immersive, interesting, complex, challenging, and massive.
 
-I'm working on a game engine called LECT (pronounced `lex`). It stands for Lore Mastery, Exploration, Combat, and Time. It's not the most original of names but in a nutshell these are the key aspects of the engine and they're what are going to make games built on the engine immersive, interesting, complex, challenging, and massive. In fact the goals that LECT solves for me, personally, are:
+The goals that LECT solves for me, personally, are:
 
 - Create games using only text and images, allowing for rapid and easy content creation by anyone
 - Make it feel as though a player is walking through and exploring a book (text based adventure)
@@ -27,3 +27,101 @@ Exploring a dangerous world requires a good grasp of combat (C). Combat is, in e
 
 Finally time (T) plays a key role in how you interact with the world. Moving from one town to another cannot be done instantly (to begin with) and takes (actual) time. Reading a book yields knowledge in the form of lore such as the part of the map becoming available or better understanding a monster's combat rotation. Restricting a player in this manner forces patience and allows the player to consider their actions carefully. It's like a (really complex) game of chess.
 
+## Going deeper
+
+Looking at each part of the engine in more detail might explain what I'm aiming for and why.
+
+### Lore Mastery
+
+I love reading books and exploring worlds through them. Using your imagination to build a world in your head is a wonderful thing. I also love it when a book provides sketched maps of the areas it's talking to. I want my games to feel like this.
+
+The L in LECT is about making text-adventure games that make exploring the world and map completion one of the primary ways to "win" the game. Having explored all areas, uncovered all the lore, understood all the monsters, and built a personal in-game library of books is one of the core principles behing the engine. Patience and knowledge are rewarded heavily.
+
+From a technical perspective Lore Mastery (LM) is used to uncover parts of the world or explain something you can do within the universe. This done through `grants`, which are pieces of meta data attached to items such as books, scrolls, notes, noticeboards, and so on, which literally grant the player some knowledge. An example might be:
+
+
+```yaml
+---
+type: book
+title: A Book of Example Spells Vol 6
+author: The Great Example Author
+date: 899BC
+
+contents: # "chapters"
+	- body: "At the end of the day... it's dark! So why not throw a nice juicy fireball at something (or someone), set it on fire, and light the place up a bit?"
+	  grants:
+		- key: spell_fireball_level_2
+		  conditions:
+		  	- read_time: 120 # minutes; two hours
+		  	- level: 30
+	
+	- body: "After setting someone on fire, you will likely need to peg it from the coppers: why not teleport away? Perfect!"
+	  grants:
+	    - key: spell_teleport_level_2
+		  conditions:
+		  	- read_time: 300 # minutes; five hours
+		  	- level: 35
+
+	- body: "Now go forth and set things on fire! Just don't try and teleport and fireball at the same time. Bad things will happen"
+	  grants:
+	  	- key: trait_teleporting_fireball_madness
+		  conditions:
+		  	- read_time: 510 # minutes; 8.5 hours
+		  	- level: 30
+```
+
+Or after reading a noticeboard, perhaps you become aware of a new town?
+
+```yaml
+---
+type: noticeboard
+title: Town Noticeboard
+contents:
+	- body: "Liverpool is looking for people who can teleport! Good money. Come to...."
+	  grants:
+	  	- key: location_city_liverpool
+	  	  conditions:
+	  	  	- level: 20
+	  	  	- reputation_greater_than: 80 # > 80% with the targt location
+```
+
+Here we're seeing an example of the structure (which might change at this point) of various items throughout a game world. These "items" can be placed inside of a room and then explored or interacted with by a player. For example the book can be piked up and read to learn new spells.
+
+This kind of flexibility allows game masters to create very rich worlds with restrictions and conditions that force players to come back later on (like after reaching level 35 so they can learn the teleport spell, for example.)
+
+Lore isn't restricted to locations or spells, however. It can be used to bestow any knowledge on a player. Essentially a player can be told about anything in the game and it's added to their library under the right catergory (beastology, magic, maps, etc.) In the case of beastology, you can learn about an enemies combat rotation (discussed below):
+
+```yaml
+---
+type: book
+title: Investigating Vampires Vol 3
+# ...
+contents:
+	- body: "The programmer is a type of sugar vampire. They don't hunt and consume human blood like most vampires. Instead they hunt (grab from the fridge a free) sugary beverage and consume them on mass."
+	  grants:
+	  	- key: beast_sugar_vampire
+	  	  conditions:
+	  	  	- inventory_item_key: can_of_cuke
+```
+
+Which would yield something along these lines in the player's Beastology:
+
+```yaml
+---
+key: beast_sugar_vampire
+combat_rotations:
+	- name: generic
+	  actions:
+		- action_1
+		- action_2
+	  reactions:
+		- reaction_4
+		- reaction_3
+	  conditions:
+	  	- player_level_less_than: 30
+	  	- player_class: mage
+```
+
+The more you read about Roy, um I mean "Sugar Vampires", the more about their combat capabilities you know and the better you can plan ahead when facing them in combat.
+
+That's what Lore Mastery is about and that's why it's important to the game's mechanics.
