@@ -10,12 +10,12 @@ The goals that LECT solves for me, personally, are:
 
 - Create games using only text and images, allowing for rapid and easy content creation by anyone
 - Make it feel as though a player is walking through and exploring a book (text based adventure)
-- Make worlds so big it takes months, maybe even years, to fully explore them (actual time)
+- Make worlds so big it takes months, maybe even years, to fully explore them
 - Allow for character builds that are complex and unique (traits)
 - Combat is highly customisable and tailored to specific encounters (rotation tables)
-- Force the player to think before acting (actual time)
-- Make the player be patient and wait for actions to complete (actual time)
+- Force the player to think before acting: wasting time is a bad idea
 - The goal isn't shiny or the best equipment, it's defeating hard problems and being the best adventure the world as seen
+- Taking actions costs a certain amount of time; you age as you move through the world and old age is a thing
 
 These are the core tenants the engine will live by and aim to solve.
 
@@ -23,9 +23,11 @@ The lore (L) found throughout the world explains everything there is to be under
 
 Exploration (E) is how you progress your character through the world. It's also how you find more lore to study. It's how you find foes to fight to get bigger and stronger, level up, stash away gold, get better gear, and move on through the world.
 
-Exploring a dangerous world requires a good grasp of combat (C). Combat is, in essence, a modified, automated game of Magic The Gathering. It involves defining a rotation of skills and a set of reactions to certain events. During a combat phase your rotation is executed in order and your reactions trigger to events fired by your enemies, who also have skill rotation and reaction tables. Action Points (AP) are used to constrict what and when you can execute an ability.
+Exploring a dangerous world requires a good grasp of combat (C). Combat is, in essence, a modified, automated game of Magic The Gathering. It involves defining a rotation of skills and a set of reactions to certain events. Skills are placed into a Rotation Table and Reaction Tables tell the game how ou want to react to certain events. During a combat phase your rotation is executed in order and your reactions trigger to events started by your enemies, who also have skill rotation and reaction tables. Action Points (AP) are used to constrict what and when you can execute an ability.
 
-Finally time (T) plays a key role in how you interact with the world. Moving from one town to another cannot be done instantly (to begin with) and takes (actual) time. Reading a book yields knowledge in the form of lore such as the part of the map becoming available or better understanding a monster's combat rotation. Restricting a player in this manner forces patience and allows the player to consider their actions carefully. It's like a (really complex) game of chess.
+AP starts at one and crements by one each turn of combat (for both parties.)
+
+Finally, time (T) is limited. As your characters studies lore, engages in combat, and explores the world, you spend time. This isn't a new idea (Fallout), but it'll really force the player to consider their actions and think through what they're doing. As the character ages, their physical attributes diminish but their wisdom and inntelligence increases. A character can die of old age (somewhat random event) but magic can be used to prevent this.
 
 ## Going deeper
 
