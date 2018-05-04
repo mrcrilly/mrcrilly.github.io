@@ -1,18 +1,18 @@
 baseURL = "https://mrcrilly.blog/"
 languageCode = "en-us"
-title = "Mr Crilly's Words"
+title = "Michael Crilly"
 theme = "cocoa-eh"
 googleAnalytics = "UA-36711302-1"
 
 [params]
 dateform = "Jan 2, 2006"
 dateformfull = "Mon Jan 2 2006 15:04:05 MST"
-description = "Mr Crilly's Words"
+description = "programming, finance, life"
 copyright = "Copyright © 2017 Michael Crilly"
 highlightjs = true
 progressively = true
 share = false 
-latestpostcount = 5
+latestpostcount = 20
 github = "mrcrilly"
 email = "mc@sent.com"
 social_banner = "img/banner.png"
