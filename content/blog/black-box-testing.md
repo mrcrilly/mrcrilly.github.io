@@ -14,7 +14,7 @@ I opted for a Behaviour Driven Development (BDD) approach. Behaviour based tests
 
 I considered the benefits of unit and module tests against simply testing the whole system in one go. Ultimately I don't care if a single unit is working as intended in isolation: I want the whole machine to work and conform to my requirements. If it's not confirming, I fix it. If I break something during a development cycle, I'll know before I even commit anything.
 
-For more information on TDD, checkout this excellent conversation between [Martin Fowler, Kent Beck, and David Heinemeier Hansson](https://martinfowler.com/articles/is-tdd-dead/). Also read David's thoughts in his blog post, ["TDD is dead. Long live testing"].(http://david.heinemeierhansson.com/2014/tdd-is-dead-long-live-testing.html) Another good read is, ["Why most Unit Testing is a waste"].(https://rbcs-us.com/documents/Why-Most-Unit-Testing-is-Waste.pdf)
+For more information on TDD, checkout this excellent conversation between [Martin Fowler, Kent Beck, and David Heinemeier Hansson](https://martinfowler.com/articles/is-tdd-dead/). Also read David's thoughts in his blog post, ["TDD is dead. Long live testing"](http://david.heinemeierhansson.com/2014/tdd-is-dead-long-live-testing.html). Another good read is, ["Why most Unit Testing is a waste"](https://rbcs-us.com/documents/Why-Most-Unit-Testing-is-Waste.pdf).
 
 At first I started using [Ginkgo](https://github.com/onsi/ginkgo). It's a very mature, well established library for BDD. However it quickly got complex and confusing, and so I abandoned it in favour of [GoConvey](https://github.com/smartystreets/goconvey/).
 
