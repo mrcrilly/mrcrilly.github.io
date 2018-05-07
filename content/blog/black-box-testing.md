@@ -1,6 +1,6 @@
 ---
 title: "Black box testing"
-date: 2018-05-07T17:00:00+00:00
+date: 2018-05-07T17:30:00+00:00
 ---
 
 I recently needed to introduce testing to an authentication microservice I've been writing. Two things prompted this:
