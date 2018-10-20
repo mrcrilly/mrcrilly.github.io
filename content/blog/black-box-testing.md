@@ -43,13 +43,15 @@ confusing, and so I abandoned it in favour of
 
 To test a call to my service, I'm writing simple tests:
 
-```go func TestAuthenticationServiceJourney(t *testing.T) { Convey("The user
+```go
+func TestAuthenticationServiceJourney(t *testing.T) { Convey("The user
 can complete a journey through the service", t, func() { response :=
 createNewUser(...) So(response.HTTPStatusCode, ShouldEqual, http.StatusOK)
 So(response.Error, ShouldBeFalse)
     
 	response = loginNewUser(...) So(response.HTTPStatusCode, ShouldEqual,
-http.StatusOK) So(response.Error, ShouldBeFalse) // ...  }) } ```
+http.StatusOK) So(response.Error, ShouldBeFalse) // ...  }) }
+```
 
 I originally wrapped the repeated `response` and `So()` lines into individual
 `Convey()` calls, but these generate their own scope and Convey acts a bit
