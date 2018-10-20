@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 title: "Black box testing"
 date: 2018-05-07T17:30:00+00:00
 ---
