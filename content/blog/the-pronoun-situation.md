@@ -87,9 +87,9 @@ be reformed so that people with addictions can get the help they need instead
 of being shunned by society.
 
 For the trans community we need to support their ideas and (positive) actions,
-allowing them to flourish. Given enough time and I'm confident that society as
-a whole will see just how beautiful a concept theirs is and with that, laws
-will be reformed in protect the equality of all.
+allowing them to flourish. Given enough time I'm confident that society as a
+whole will see just how beautiful a concept theirs is and with that, laws will
+be reformed in protect the equality of all.
 
 We just need to keep talking.
 
