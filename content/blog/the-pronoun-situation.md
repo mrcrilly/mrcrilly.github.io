@@ -9,14 +9,13 @@ use of pronouns within the transgender community. I want to address analysis
 and various remarks and backlash of the following facts regarding Peterson's
 views:
 
-	... he stated he would not use the preferred gender pronouns of students
-	and faculty, saying it fell under compelled speech, and announced his objection
-	to the Canadian government's Bill C-16, which proposed to add "gender identity
-	or expression" as a prohibited ground of discrimination under the Canadian
-	Human Rights Act, and to similarly expand the definitions of promoting genocide
-	and publicly inciting hatred in the Criminal Code.
-
-([Wikipedia](https://en.wikipedia.org/wiki/Jordan_Peterson#Gender_relations_and_masculinity))
+"... he stated he would not use the preferred gender pronouns of students and
+faculty, saying it fell under compelled speech, and announced his objection to
+the Canadian government's Bill C-16, which proposed to add "gender identity or
+expression" as a prohibited ground of discrimination under the Canadian Human
+Rights Act, and to similarly expand the definitions of promoting genocide and
+publicly inciting hatred in the Criminal Code." -
+[Wikipedia](https://en.wikipedia.org/wiki/Jordan_Peterson#Gender_relations_and_masculinity)
 
 In this post I make clear my views on the transgender community and use of the
 pronouns, as well how I feel about Peterson being labelled "transphobic" for
