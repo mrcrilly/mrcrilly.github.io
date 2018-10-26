@@ -4,39 +4,46 @@ title: "The whole pronoun situation"
 date: 2018-10-26T12:00:00+00:00
 ---
 
+Professor Jordan Peterson has made a name for him self with his views on the
+use of pronouns within the transgender community. I want to address analysis
+and various remarks and backlash of the following facts regarding Peterson's
+views:
+
+	... he stated he would not use the preferred gender pronouns of students
+	and faculty, saying it fell under compelled speech, and announced his objection
+	to the Canadian government's Bill C-16, which proposed to add "gender identity
+	or expression" as a prohibited ground of discrimination under the Canadian
+	Human Rights Act, and to similarly expand the definitions of promoting genocide
+	and publicly inciting hatred in the Criminal Code. -
+	[Wikipedia](https://en.wikipedia.org/wiki/Jordan_Peterson#Gender_relations_and_masculinity)
+
+In this post I make clear my views on the transgender community and use of the
+pronouns, as well how I feel about Peterson being labelled "transphobic" for
+his views.
+
 My view regarding anyone who is transgender is they're simply equal in all
-ways.
+regards.
 
-The trans community is paving the way for a more open, fluid society in which
-the acceptance of new ideas is paramount and everyone's opinion and way of life
-is accepted as valid.
+I believe the transgender community is a brave and deeply important new way
+forward for all of us.  It's a community that's employing its incredibly rare
+gift of life to protest the concepts surrounding social normality, specifically
+around the constructs of binary identity. The transgender community is showing
+us that society is ever changing and fluid by nature. We should not fear this
+change but instead embrace it, for I believe it's a critical part of our
+future.
 
-I believe the trans community is a brave new way forward for all of us. I
-believe that when a person decides to make as strong a statement as, "I don't
-fit into the boxes society has presented me with" they're making an incredibly
-powerful and brave choice.
+We should all understand that respecting their position helps us all grow as a
+society and as such we should hold the transgender community in high regard and
+with the upmost of respect.
 
-They're taking their incredibly rare gift of life and choosing to use it in a
-way that opposes social norms and instead makes a statement about how ever
-changing and fluid society really is. They're making a sacrifice to us all in
-their endevour to express freedom of expression and thought.
+But a community cannot and will not achieve equal rights for all in isolation.
+It's a societal effort, but also a two-way street.
 
-It could be argued that the trans community is choosing to express themselves
-by using their lives as the canvas and we, as a whole, absolutely have to be
-paying attention to and supporting this important stage of our own evolution as
-a species.
+The political left and right are opposing, but they need each other. You can't
+have just one side otherwise you have a broken scale. You have chaos.
 
-I understand that respecting their position helps us all grow as a society and
-as such, I hold the transcommunity in high regard and with the upmost of
-respect.
-
-But...
-
-Such a community cannot and will not achieve equal rights for all in isolation.
-It's a societal effort, but also a two-way street. The political left and right
-are opposing, but they need each other. You can't have just one side otherwise
-you have a broken scale. You have chaos. This is why I have an issue with the
-current pronoun situation: it's creating a one-way street.
+This is why I have an issue with the current pronoun situation: it's creating a
+one-way street; a one-sided debate.
 
 ---
 
@@ -60,6 +67,10 @@ spectrum. It's not a multiple choice exam. It's life and it's complicated.
 
 We should be striving for equality for all, not just those going through a
 (very personal) transformation.
+
+Having now considered this situation more, I simply ask: what use do pronouns
+have in this current climate of ours? Perhaps the equality we seek around
+identity can be found in abolishing pronouns entirely?
 
 ---
 
