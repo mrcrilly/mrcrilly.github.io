@@ -7,9 +7,9 @@ date: 2018-10-26T12:00:00+00:00
 My view regarding anyone who is transgender is they're simply equal in all
 ways.
 
-The trans community is paving the way for a more open, fluid society were the
-acceptance of new ideas is paramount and everyone's opinion and way of life is
-accepted as beautiful and valid.
+The trans community is paving the way for a more open, fluid society in which
+the acceptance of new ideas is paramount and everyone's opinion and way of life
+is accepted as valid.
 
 I think the trans community is a brave new way forward for a lot of people. I
 believe that when a person decides to make as strong a statement as, "I don't
