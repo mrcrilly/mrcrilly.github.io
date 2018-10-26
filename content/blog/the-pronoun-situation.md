@@ -11,7 +11,7 @@ The trans community is paving the way for a more open, fluid society in which
 the acceptance of new ideas is paramount and everyone's opinion and way of life
 is accepted as valid.
 
-I think the trans community is a brave new way forward for a lot of people. I
+I believe the trans community is a brave new way forward for all of us. I
 believe that when a person decides to make as strong a statement as, "I don't
 fit into the boxes society has presented me with" they're making an incredibly
 powerful and brave choice.
