@@ -1,7 +1,73 @@
 ---
-draft: false
-title: "The whole pronoun situation"
+draft: true
+title: "Protecting Ideas"
 date: 2018-10-26T12:00:00+00:00
+---
+
+I want to explore the concept of protecting ideas from a legal and spiritual
+perspective. More specifically, the **idea** of **identity**.
+
+I'll start by explaining how I feel about one idea specifically, the
+transgender community, and use it as an example of protecting ideas using
+legislative processes as well as how I feel about the movement on a spiritual
+level.
+
+Because it can be easy to misunderstand or misinterpret another's perspective,
+please allow me to first address my feelings about transgender individuals, 
+the community and their ideas.
+
+I respect the **idea** (and its outcome) that someone knows they're not living
+their true **identity**. I understand this can manifest its self in the form of
+undergoing a transformation (and sometimes it doesn't.) I support and respect
+anyone going through this personal journey and I will respect the outcome for
+that individual.
+
+I'm also completely for the idea that people undergoing such a transformation
+should be protected from attack and or oppression. The ramifications of
+allowing such negative actions against the transgender community aren't going
+to be positive. We've certainly got some recent history we can draw on as an
+example of this.
+
+But I've been wondering: should we attempt to force specific types of speech to
+protect a community or minority, such as the transgender community, or should
+we be making sure existing equality laws include such communities and are
+enforced?
+
+Is it not enough to simply say everyone is equal regardless of their race,
+creed, sex, gender, age, religion, political identity and whatever else can be
+included in this list? Do we really need to protect specific genders or age
+groups?
+
+More specifically, and inline with recent hot topics, should we be introducing
+laws that force specific use of language around pronouns?
+
+I also want to ask: why are we even still using pronouns at all? Would we not
+be better off without them? Are names not enough?
+
+## An Idea is Born
+
+...
+
+## What is Identity?
+
+...
+
+## Freedom of Speech
+
+- More than an idea
+- It's a mechanism
+- Where do we draw the line?
+
+## The Shield of Law
+
+- (See if Jodi can and will comment)
+
+## Pronouns
+
+- (Their first use)
+- (Their purpose)
+- (Continued use)
+
 ---
 
 Professor Jordan Peterson has made a name for him self with his views on the
