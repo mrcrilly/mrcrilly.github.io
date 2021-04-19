@@ -1,4 +1,3 @@
-# Hello
 
 ## This is a sub-heading
 
